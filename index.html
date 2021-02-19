@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Kikuのポートフォリオサイト">
+        <meta name="keywords" content="ポートフォリオ">
+        <!--<meta property="fb:app_id" content="<?= FB_APPID; ?>">-->
+        <meta property="og:locale" content="ja_JP">
+        <!--<meta property="og:type" content="<?= $ogtype; ?>">-->
+        <meta property="og:title" content="Kiku-Portfolio">
+        <meta property="og:description" content="Kikuのポートフォリオサイト">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="Kiku-Portfolio">
+        <meta property="og:image" content="./assets/images/ogpimg.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:description" content="Kikuのポートフォリオサイト">
+        <meta name="twitter:title" content="Kiku-Portfolio">
+        <meta name="twitter:image" content="./assets/images/ogpimg.png">
+        <meta name="robots" content="noindex" />
+        <meta name="googlebot" content="noindex" />
+        <meta name="robots" content="nofollow" />
+        <title>Kiku's Portfolio</title>
+        <link rel="canonical" href="">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico">
+        <!--Include CSS Resources | preload-->
+        <link rel="preload" as="style" href="./assets/css/style.css">
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
+        <!--Include CSS Resources | normalload-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/modal.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
+        <!--Include JavaScript Resources | preload-->
+    </head>
+
+    <body id="top" class="top">
+        <header id="header" class="l-header">
+            <div class="l-header__inner">
+                <a class="l-logo" href="./">
+                    <h1 class="l-logo__image"><img class="logo" src="./assets/images/logo.svg" alt="Kiku's Portfolio"></h1>
+                </a>
+
+                <nav class='l-nav'>
+                    <ul class="l-nav__list">
+                        <li class="l-nav__item">
+                            <a class="l-nav__link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="l-nav__item">
+                            <a class="l-nav__link" href="#possible-skill">POSSIBLE & SKILL</a>
+                        </li>
+                        <li class="l-nav__item">
+                            <a class="l-nav__link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="l-nav__item">
+                            <a class="l-nav__link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button id="l-hmb" class="l-hmb" aria-label="メニューボタン"><span></span></button>
+                <div class="l-bg"></div>
+            </div>
+        </header>
+
+        <main id="pagetop" class="l-page">
+            <div class="mv-area">
+                <div class="l-container">
+                    <div class="mv-area__box">
+                        <div class="mv-area__box--item">
+                            <h1 class="title">Kiku's Portfolio</h1>
+
+                            <div class="text-box">
+                                <p class="text">フロントエンドエンジニアを目指している<br class="l-lg">マークアップエンジニア・<a class="link" href="#about">Kiku</a>のポートフォリオサイトです。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents-area">
+                <!-- about -->
+                <section id="about" class="contents-box about">
+                    <div class="l-container">
+                        <div  class="title-box">
+                            <h2 class="title-box__title">ABOUT</h2>
+                            <span class="title-box__sub">Kikuについて</span>
+                        </div>
+
+                        <div class="item-box">
+                            <div class="item-box__prof">
+                                <picture class="img-icon"><img src="./assets/images/img/img-kiku.jpg" alt="Kikuのアイコン"></picture>
+
+                                <div class="name-box">
+                                    <p class="name">Kiku</p>
+                                    <p class="position">Markup enjineer</p>
+                                </div>
+
+                            </div>
+                            <div class="item-box__text">
+                                <p class="text">1992年生まれ、生まれも育ちも沖縄県です。</p>
+                                <p class="text">フロントエンドエンジニアを目指している、マークアップエンジニアです。</p>
+                                <p class="text">色んなWeb制作ができるようになりたいと思ったことがきっかけで、フロントエンドエンジニアを目指すようになりました。</p>
+                                <p class="text">コード触るの、結構好きです。</p>
+                                <p class="text">2020/12/01〜転職活動中...です...(^ω^)</p>
+                            </div>
+                        </div>
+
+                        <ul class="list-btn">
+                            <li class="list-btn__item">
+                                <a class="btn modal-open" data-modal-open="modal-about">Time line</a>
+                            </li>
+
+                            <li class="list-btn__item">
+                                <a class="btn twitter" href="https://twitter.com/kiku_dondokodon" target="_blank"><p class="name">Twitter</p></a>
+                            </li>
+                        </ul>
+
+                        <div class="modal" data-modal="modal-about">
+                            <div class="modal-cover"></div>
+                            <div class="modal-inner">
+                                <div class="modal-inner__content">
+                                    <h3 class="b-title">Time line <span class="l-title">これまでの経歴</span></h3>
+                                    <div id="about-timeline" class="list-timeline">
+                                        <template v-for="data in items">
+                                            <dl class="list-timeline__item">
+                                                <dt class="date">{{data.date}}</dt>
+                                                <dd class="text">{{data.text}}</dd>
+                                            </dl>
+                                        </template>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a class="btn btn-close">close </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- possible&skill -->
+                <section id="possible-skill" class="contents-box possible">
+                    <div class="l-container">
+                        <div  class="title-box">
+                            <h2 class="title-box__title">POSSIBLE & SKILL</h2>
+                            <span class="title-box__sub">出来ること、使用できる言語やツールなど</span>
+                        </div>
+
+                        <div class="item-box">
+                            <div id="possible" class="list-possible">
+                                <template v-for="data in items">
+                                <dl class="list-possible__item">
+                                    <dt class="category">{{data.title}}</dt>
+                                    <dd class="text">{{data.item}}</dd>
+                                </dl>
+                                </template>
+                            </div>
+
+                            <ul id="skill" class="list-skill">
+                                <template v-for="data in items">
+                                    <li class="list-skill__item">
+                                        <div class="list-skill__item--contents">
+                                            <div class="contents-flame">
+                                                <p class="category">{{data.category}}</p>
+
+                                                <div class="status-box">
+                                                    <p class="status">{{data.status}}</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- portfolio -->
+                <section id="portfolio" class="contents-box portfolio">
+                    <div class="l-container">
+                        <div  class="title-box">
+                            <h2 class="title-box__title">PORTOFLIO</h2>
+                            <span class="title-box__sub">実績と個人制作</span>
+                        </div>
+
+                        <div class="item-box">
+                            <div class="portfolio-box">
+                                <div class="portfolio-box__work">
+                                    <h3 class="b-title">Work<span class="l-title">実績</span></h3>
+
+                                    <div class="portfolio-box__item">
+                                        <div class="portfolio-item">
+                                            <h4 class="year">2018 - 2019</h4>
+                                            <div class="portfolio-item__contents">
+                                                <p class="text">以下URLから確認できます。</p>
+                                                <a class="link-blank" href="https://book.plan-b.co.jp/people/144/" target="_blank">https://book.plan-b.co.jp/people/144/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-box__item">
+                                        <div class="portfolio-item">
+                                            <h4 class="year">2019 - 2020</h4>
+                                            <div class="portfolio-item__contents">
+                                                <ul class="work-list">
+                                                    <li class="work-list__item">
+                                                        <p class="text">他社サイト作成</p>
+                                                    </li>
+                                                    <li class="work-list__item">
+                                                        <p class="text">自社メディアサイト改修、更新</p>
+                                                    </li>
+                                                    <li class="work-list__item">
+                                                        <p class="text">記事内画像作成</p>
+                                                    </li>
+                                                    <li class="work-list__item">
+                                                        <p class="text">動画ナレーション</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text">を担当しました。<br>こちらの実績内容は該当サイト(ページ)のURLをお送りいたしますので、お気軽に<a class="link-text" href="#contact">お問い合わせ</a>ください。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio-box__product">
+                                    <h3 class="b-title">Product<span class="l-title">個人制作</span></h3>
+
+                                    <div class="portfolio-box__item">
+                                        <h4 class="category">Web site / Page</h4>
+
+                                        <ul class="product-list">
+                                            <li class="product-list__item">
+                                                <a id="sitePage-01" class="modal-open product-list__item--flame" data-modal-open="modal-webPage01">
+                                                    <picture class="img-box">
+                                                        <img src="./assets/images/img/img-product-webpage01.jpg" class="img-box__img" alt="Kiku's Portfolio">
+                                                    </picture>
+                                                    <h5 class="title">Kiku's Portfolio</h5>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- モーダルウィンドウ　中身 -->
+                                        <div class="modal" data-modal="modal-webPage01">
+                                            <div class="modal-cover"></div>
+                                            <div class="modal-inner">
+                                                <div class="modal-content">
+                                                    <div class="product-contents">
+                                                        <picture class="product-contents__img">
+                                                            <img src="./assets/images/img/img-product-webpage01.jpg" alt="Kiku's Portfolio">
+                                                        </picture>
+
+                                                        <div class="product-contents__item">
+                                                            <h5 class="title">Kiku’s Porfolio</h5>
+                                                            <ul class="list-option">
+                                                                <li class="list-option__item">
+                                                                    <p class="text">HTML5 / SCSS / JavaScript(ES6)</p>
+                                                                </li>
+                                                                <li class="list-option__item">
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">テンプレート：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://github.com/TsubasaHiga/Percolator" target="_blank">Percolator</a></dd>
+                                                                    </dl>
+
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">アイコン(別窓)：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://icooon-mono.com/" target="_blank">ICOOON MONO</a></dd>
+                                                                    </dl>
+
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">アイコン(言語、ツール)：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://devicon.dev/" target="_blank">Devicon</a></dd>
+                                                                    </dl>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="box-instructions">
+                                                                <p class="text">JavaScriptの学習も兼ねて、追従ヘッダーの効果付けやモーダルウィンドウの作成、「Time line」や「POSSIBLE & SKILL」のリストをVue.jsで作成してみました。</p>
+                                                                <p class="text">レスポンシブ対応済みです。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn-wrap">
+                                                    <a class="btn btn-close">close </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-box__item">
+                                        <h4 class="category">Design</h4>
+
+                                        <ul class="product-list">
+                                            <li class="product-list__item">
+                                                <a id="design-01" class="modal-open product-list__item--flame" data-modal-open="modal-design01">
+                                                    <picture class="img-box">
+                                                        <img src="./assets/images/img/img-product-design01_lg.jpg" class="img-box__img" alt="サイトデザイン01">
+                                                    </picture>
+                                                    <h5 class="title">サイトデザイン01</h5>
+                                                </a>
+
+
+                                            </li>
+
+                                            <li class="product-list__item">
+                                                <a id="design-02" class="modal-open product-list__item--flame" data-modal-open="modal-design02">
+                                                    <picture class="img-box">
+                                                        <img src="./assets/images/img/img-product-design02_lg.jpg" class="img-box__img" alt="デザイン02">
+                                                    </picture>
+                                                    <h5 class="title">デザイン02</h5>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- モーダルウィンドウ　中身 -->
+                                        <div class="modal" data-modal="modal-design01">
+                                            <div class="modal-cover"></div>
+                                            <div class="modal-inner">
+                                                <div class="modal-content">
+                                                    <div class="product-contents">
+                                                        <picture class="product-contents__img">
+                                                            <img src="./assets/images/img/img-product-design01_lg.jpg" alt="サイトデザイン01">
+                                                        </picture>
+
+                                                        <div class="product-contents__item">
+                                                            <h5 class="title">サイトデザイン01</h5>
+                                                            <ul class="list-option">
+                                                                <li class="list-option__item">
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">画像：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://pixabay.com/ja/" target="_blank">Pixabay</a></dd>
+                                                                    </dl>
+
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">アイコン：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://icooon-mono.com/" target="_blank">ICOOON MONO</a></dd>
+                                                                    </dl>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="box-instructions">
+                                                                <p class="text">ブログサイトを作成しようかな、と考えていた時に作成しました。</p>
+                                                                <p class="text">画像のチョイスは「外国でバカンスしたいよ〜、美味しいもの沢山食べたいよ〜」と現実逃避していたからとかなんとか・・・。</p>
+                                                                <p class="text">フルサイズは<a class="link" href="./assets/images/img/img-product-design01_lg.jpg">こちら</a>から確認できます。<br><span class="comment">※PCサイズのみ(width：1920px)</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <a class="btn btn-close">close </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal" data-modal="modal-design02">
+                                            <div class="modal-cover"></div>
+                                            <div class="modal-inner">
+                                                <div class="modal-content">
+                                                    <div class="product-contents">
+                                                        <picture class="product-contents__img">
+                                                            <img src="./assets/images/img/img-product-design02_lg.jpg" alt="サイトデザイン02">
+                                                        </picture>
+
+                                                        <div class="product-contents__item">
+                                                            <h5 class="title">サイトデザイン02</h5>
+                                                            <ul class="list-option">
+                                                                <li class="list-option__item">
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">画像：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://pixabay.com/ja/" target="_blank">Pixabay</a></dd>
+                                                                    </dl>
+
+                                                                    <dl class="list-option__item--link">
+                                                                        <dt class="category">アイコン：</dt>
+                                                                        <dd class="name"><a class="link-blank" href="https://icooon-mono.com/" target="_blank">ICOOON MONO</a></dd>
+                                                                    </dl>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="box-instructions">
+                                                                <p class="text">友人のコーディング練習用に作成しました。</p>
+                                                                <p class="text">フルサイズは<a class="link" href="./assets/images/img/img-product-design02_lg.jpg">こちら</a>から確認できます。<br><span class="comment">※PCサイズのみ(width：1920px)</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <a class="btn btn-close">close </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact -->
+                <section id="contact" class="contents-box contact">
+                    <div class="l-container">
+                        <div  class="title-box">
+                            <h2 class="title-box__title">CONTACT</h2>
+                            <span class="title-box__sub">お問い合わせ</span>
+                        </div>
+
+                        <div class="item-box">
+                            <p class="text">お手数をお掛けしますが、ツイッターのDMから<br>ご連絡よろしくお願いいたします。</p>
+                            <ul class="list-btn">
+                                <li class="list-btn__item">
+                                    <a class="btn twitter" href="https://twitter.com/kiku_dondokodon" target="_blank"><p class="name">Twitter</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- vue.js -->
+        <script>
+            var app = new Vue({
+              el: "#about-timeline",
+              data() {
+                return {
+                  items: [
+                    { date: "2008/03", text: "中学校卒業" },
+                    { date: "2008/04", text: "高校入学" },
+                    { date: "2011/03", text: "高校卒業" },
+                    { date: "2011/04", text: "大阪のデザイン系の専門学校に入学" },
+                    { date: "2011/12", text: "専門学校を中退、沖縄に戻る" },
+                    { date: "2013/03", text: "IT企業のWeb業界人材育成研修生として入社(コーディング、Photoshopなどを学習)" },
+                    { date: "2013/09", text: "IT企業のWeb業界人材育成研修が修了、OJT先の雑貨屋に入社。(ネットショップの商品管理、商品デザインを担当)" },
+                    { date: "2013/10", text: "雑貨屋を退職" },
+                    { date: "2014/12", text: "職業訓練校に入校。Webクリエイター関連の内容を学習し直す" },
+                    { date: "2015/02", text: "Webクリエイター能力検定試験(上級)を取得、職業訓練校を修了" },
+                    { date: "2015/04", text: "IT企業にアルバイトで入社。ライターから制作へ異動し、マークアップを担当" },
+                    { date: "2019/03", text: "退職" },
+                    { date: "2019/04", text: "IT企業に正社員で入社。マークアップを担当。部署異動してからはサイト改修、動画音声、画像・イラスト作成なども担当しました" },
+                    { date: "2020/11", text: "退職" },
+                    { date: "2020/12", text: "転職活動中です" }
+                  ]
+                }
+              }
+            });
+
+            var app = new Vue({
+              el: "#possible",
+              data() {
+                return {
+                  items: [
+                    { title: "静的サイト制作", item: "HTML5、cssを用いて静的サイトの制作を行うことが可能です。" },
+                    { title: "既存サイト改修", item: "既存サイトの更新、改修を行うことが可能です。" },
+                    { title: "デザイン関連", item: "サイトデザイン、画像作成を行うことが可能です。" }
+                  ]
+                }
+              }
+            });
+
+            var app = new Vue({
+              el: "#skill",
+              data() {
+                return {
+                  items: [
+                    {
+                        category: "HTML5",
+                        status: "85%"
+                    },{
+                        category: "CSS",
+                        status: "80%"
+                    },{
+                        category: "Scss",
+                        status: "65%"
+                    },{
+                        category: "JavaScript",
+                        status: "20%"
+                    },{
+                        category: "Vue.js",
+                        status: "20%"
+                    },{
+                        category: "PHP",
+                        status: "25%"
+                    },{
+                        category: "WordPress",
+                        status: "30%"
+                    },{
+                        category: "git",
+                        status: "35%"
+                    },{
+                        category: "Photoshop",
+                        status: "65%"
+                    },{
+                        category: "Illustrator",
+                        status: "40%"
+                    },{
+                        category: "Atom",
+                        status: ""
+                    }
+                  ]
+                }
+              }
+            });
+        </script>
+
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <a class="logo-box" href="#">
+                    <img class="logo" src="./assets/images/logo.svg" alt="Kiku's Portfolio">
+                </a>
+            </div>
+        </footer>
+
+    </body>
+</html>
