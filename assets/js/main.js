@@ -5,7 +5,6 @@
 * -------------------------------------------------------------*/
 document.getElementById("l-hmb").onclick = function(){
   document.querySelector('html').classList.toggle('is-nav-active');
-  document.querySelector('html').classList.toggle('is-nav-active');
 }
 
 /** ------------------------------------------------------------
