@@ -9,3 +9,10 @@ JavaScriptの学習も兼ねて、追従ヘッダーの効果付けやモーダ�
 アイコン<br>
 ┗ [ICOOON MONO](https://icooon-mono.com/)<br>
 ┗ [Devicon](https://devicon.dev/)
+
+---
+
+## 更新
+2021/02/19：サイト公開<br>
+2021/03/05：個人制作 追加(Twitter用プロフィールページ)<br>
+2021/03/07：個人制作 追加(個人制作 ブログサイト)<br>
